@@ -4,7 +4,7 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     this.reset();
 });
 
-// Animation simple au scroll
+
 window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('section');
     sections.forEach(section => {
@@ -36,7 +36,7 @@ const observer = new IntersectionObserver((entries) => {
                 const width = bar.style.width;
                 bar.style.width = '0'; // On remet à 0
                 setTimeout(() => {
-                    bar.style.width = width; // On anime vers la valeur
+                    bar.style.width = width; 
                 }, 100);
             });
         }
